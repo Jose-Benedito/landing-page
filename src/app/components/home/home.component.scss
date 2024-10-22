@@ -60,7 +60,11 @@ p {
         font-style: normal;
     }
 }
-
+.cta-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 @media (min-width: 1000px) {
     .main-section {

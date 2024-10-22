@@ -4,7 +4,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 type BtnVariants = "primary" | "secondry";
 
 @Component({
-  selector: 'app-btn-primary',
+  selector: 'btn-primary',
   standalone: true,
   imports: [CommonModule], // para diretiva ngIf
   templateUrl: './btn-primary.component.html',
