@@ -1,1 +1,26 @@
-<p>newsletter-form works!</p>
+<section class="form-section ">
+
+    <div class="text">
+        <h3>Fique por dentro de tendências</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sed, animi aliquam suscipit nisi fugiat reprehenderit id at beatae. Sint animi illum ut, ipsam harum cumque tempore ea numquam et.</p>
+
+    </div>
+
+
+    <form [formGroup]="newsletterform">
+        <label for="name">Name</label>
+        <input id="name" formControlName="name"/>
+        <label for="email">Email</label>
+        <input id="email" formControlName="email">
+        <btn-primary 
+            btn-text="se inscreva" 
+            variant="secondry"
+            (submit)="Onsubmit()"
+            [disabled]="newsletterform.valid"
+            >
+        </btn-primary>
+    </form>
+
+
+</section>
+
